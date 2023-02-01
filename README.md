@@ -79,4 +79,24 @@ Nos permite trabajar con las rutas dependiendo del sistema operativo, el modulo 
 * path.basename('ruta'): nos devuelve el archivo de una ruta (.jpg | .py)
 * path.dirname('ruta'): nos devuelve la ruta sin el archivo (asdas/asass)
 * path.resolve('directorio'): devuelve la ruta base desde raiz hasta el neuvo *directorio*
-* path.parse('ruta'): devuelve un objeto con varias características de la ruta 
+* path.parse('ruta'): devuelve un objeto con varias características de la ruta
+
+### MODULO FS (FileSystem)
+Nos permite interactuar con archivos, leer, eliminar, modificar etc..
+`const fs = require('fs')`
+* fs.readFileSync('ruta del archivo', 'utf-8') leer un archivo (de manera sincrona)
+* fs.writeFileSync('ruta','contenido') escribir un archivo (de manera sincrona)
+  - Si existe el archivo se vuelve a crear (se sobreescribe).
+  - Se usa `flag: a` en caso de necesitar mantener el texto anterior y aumentar nuevo texto (ver fs.js)
+<hr>
+
+* fs.readFile('ruta', 'utf-8', (err, data) => {}) leer de manera asincrona
+* fs.writeFile('ruta', 'contenido', {flags}, (err)=>{}) escribir de manera ascincrona
+
+### MODULO HTTP
+Nos permite manejar recibir peticiones y devolver respuestas.
+`const http = require('http')`
+* Crear servidor: `http.createServer((request, response) =>{})`
+  - request: obtiene todos los datos de una petición
+  - response: es la respuesta del servidor 
+  - Ambas contienen varios métodos para interactuar.
