@@ -101,11 +101,12 @@ Nos permite manejar recibir peticiones y devolver respuestas.
   - response: es la respuesta del servidor 
   - Ambas contienen varios métodos para interactuar.
 
-## NPM
+## NPM (npmjs.com)
 * `npm install paquete` para instalar algun paguete de npm
 * `npm i` tambien sirve para instalar un paquete
 * `npm remove paquete` sirve para desinstalar algun paquete
-* `npm install -D paquete` instala los paquetes unicamente para es entorno de desarrollo
+* `npm install paquete -D` instala los paquetes unicamente para es entorno de desarrollo (Quiere decir que no es necesario en producción, es más como una herramienta para el desarrollador) '_nodemon_ es un ejemplo'
+* `npm install paquete -g` instala los paquetes globalmente (ordenador)
 * `npm init` permite crear el archivo package.json de manera mas extendida (consola). 
 <br>
 
@@ -114,3 +115,9 @@ Nos permite manejar recibir peticiones y devolver respuestas.
 * Se pone: "scripts": { "abreviado": "Comando a ejecutar" }
 * Para correr el comando se usa
   - npm run abrevidado
+
+## NPX 
+Se usa para usar paquetes sin tener que instalarlos como dependencia Global o de desarrollo. Algunos paquetes usados son
+* `npx serve carpeta` comando que sirve para mostrar los cambios instantaneamente. 
+* `npx http-server carpeta/archivo` mismo que serve
+* `npx nodemon` paquete que ya se encuentra instalado, pero es en linea de comandos (npx busca el node_modules/.bin y lo ejecuta) y si no se encuentra descarga el paquete
