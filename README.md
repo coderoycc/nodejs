@@ -100,3 +100,17 @@ Nos permite manejar recibir peticiones y devolver respuestas.
   - request: obtiene todos los datos de una petición
   - response: es la respuesta del servidor 
   - Ambas contienen varios métodos para interactuar.
+
+## NPM
+* `npm install paquete` para instalar algun paguete de npm
+* `npm i` tambien sirve para instalar un paquete
+* `npm remove paquete` sirve para desinstalar algun paquete
+* `npm install -D paquete` instala los paquetes unicamente para es entorno de desarrollo
+* `npm init` permite crear el archivo package.json de manera mas extendida (consola). 
+<br>
+
+**Usar script para ejecutar un comando**
+* Se edita el archivo package.json
+* Se pone: "scripts": { "abreviado": "Comando a ejecutar" }
+* Para correr el comando se usa
+  - npm run abrevidado
