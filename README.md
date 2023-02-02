@@ -143,9 +143,17 @@ Una nueva manera de escribir promesas
 Una utilidad `util` de javascript que permite crear una función asíncrona (que devuelve promesas) simplemente enviando la función asincrona `promisify(readFile)`, con readFile función para leer archivos asíncronamente.
 
 ## EVENTS JS
-Existen varios eventos con los que se puede trabajar. Un emitidor de eventos es EventEmitter.
+Un Emitter/Listener de eventos se define de la siguiente manera.
 * Se debe importar desde `events` de NODE
 * Después de instancia un nuevo objeto 
 * Con el metodo `ON` se escucha el evento
 * Con el método `EMIT` se emite un evento
 * Ver ejemplo en events.js
+
+## STREAMS JS
+Interactuar con archivos grandes y recibir por porciones para optimizar el tiempo y demás razones
+* createReadStream Se debe importar desde **FS** y se proporciona el path
+* createReadStream tiene varios flags para cambiar el tamaño de las porciones de datos, el encoding, etc. 
+* Se crea una constante con la definición del path del archivo y con la misma constante se escuchan los eventos que se emiten al leer el archivo.
+* Ejemplo ver streams.js
+
