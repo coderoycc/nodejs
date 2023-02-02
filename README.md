@@ -123,5 +123,9 @@ Se usa para usar paquetes sin tener que instalarlos como dependencia Global o de
 * `npx nodemon` paquete que ya se encuentra instalado, pero es en linea de comandos (npx busca el node_modules/.bin y lo ejecuta) y si no se encuentra descarga el paquete
 **npm root -g** para ver donde se encuentran paquetes instalados de manera global
 
-## EVENT LOOP
-
+## PROMESAS EN JS
+Nos permiten ejecutar código asíncrono, saber si terminó de ejectarse correctamente o si sucedió algún error.
+* `Promise` es un objeto en JavaScript, el mismo puede funciona con una función de dos parámetros.
+  - resolve: que retorna el valor final esperado si la promesa no tuvo errores.
+  - reject: que retorna el error si ocurrió algo en la ejecución de la promesa
+* Ejemplo: Ver archivo promise.js
