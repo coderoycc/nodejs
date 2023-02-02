@@ -121,3 +121,7 @@ Se usa para usar paquetes sin tener que instalarlos como dependencia Global o de
 * `npx serve carpeta` comando que sirve para mostrar los cambios instantaneamente. 
 * `npx http-server carpeta/archivo` mismo que serve
 * `npx nodemon` paquete que ya se encuentra instalado, pero es en linea de comandos (npx busca el node_modules/.bin y lo ejecuta) y si no se encuentra descarga el paquete
+**npm root -g** para ver donde se encuentran paquetes instalados de manera global
+
+## EVENT LOOP
+
