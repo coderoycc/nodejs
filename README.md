@@ -108,6 +108,7 @@ Nos permite manejar recibir peticiones y devolver respuestas.
 * `npm install paquete -D` instala los paquetes unicamente para es entorno de desarrollo (Quiere decir que no es necesario en producción, es más como una herramienta para el desarrollador) '_nodemon_ es un ejemplo'
 * `npm install paquete -g` instala los paquetes globalmente (ordenador)
 * `npm init` permite crear el archivo package.json de manera mas extendida (consola). 
+* `npm init -y` permite crear el archivo package.json de manera predeterminada
 <br>
 
 **Usar script para ejecutar un comando**
@@ -156,4 +157,16 @@ Interactuar con archivos grandes y recibir por porciones para optimizar el tiemp
 * createReadStream tiene varios flags para cambiar el tamaño de las porciones de datos, el encoding, etc. 
 * Se crea una constante con la definición del path del archivo y con la misma constante se escuchan los eventos que se emiten al leer el archivo.
 * Ejemplo ver streams.js
+
+## EMASCRIPT MODULES
+* En el archivo package.json, abajo de main o al inicio, escribir. `"type":"module"`
+* La importación es de la manera: `import variable from ruta/arch.js`
+* La exportación es `export default {funciones, variables, ...}` al importarlo se puede acceder a todas las funciones que están dentro del default
+* Tambien se puede exportar cada función de la manera `export function nombre(param){}` exporta individualmente
+
+## FETCH JS
+* Similar a una API, nos permite traer datos desde una dirección
+* para usarlo solamente usamos `fetch('direccion')` nos devuelve una promesa
+* Aún esta en etapa experimental
+
 
