@@ -119,6 +119,7 @@ Nos permite manejar recibir peticiones y devolver respuestas.
 ## NPX 
 Se usa para usar paquetes sin tener que instalarlos como dependencia Global o de desarrollo. Algunos paquetes usados son
 * `npx serve carpeta` comando que sirve para mostrar los cambios instantaneamente. 
+* `npx serve -s Carpeta`
 * `npx http-server carpeta/archivo` mismo que serve
 * `npx nodemon` paquete que ya se encuentra instalado, pero es en linea de comandos (npx busca el node_modules/.bin y lo ejecuta) y si no se encuentra descarga el paquete
 **npm root -g** para ver donde se encuentran paquetes instalados de manera global
@@ -141,3 +142,10 @@ Una nueva manera de escribir promesas
 ## PROMISIFY
 Una utilidad `util` de javascript que permite crear una función asíncrona (que devuelve promesas) simplemente enviando la función asincrona `promisify(readFile)`, con readFile función para leer archivos asíncronamente.
 
+## EVENTS JS
+Existen varios eventos con los que se puede trabajar. Un emitidor de eventos es EventEmitter.
+* Se debe importar desde `events` de NODE
+* Después de instancia un nuevo objeto 
+* Con el metodo `ON` se escucha el evento
+* Con el método `EMIT` se emite un evento
+* Ver ejemplo en events.js
