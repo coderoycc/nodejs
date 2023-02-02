@@ -129,3 +129,11 @@ Nos permiten ejecutar código asíncrono, saber si terminó de ejectarse correct
   - resolve: que retorna el valor final esperado si la promesa no tuvo errores.
   - reject: que retorna el error si ocurrió algo en la ejecución de la promesa
 * Ejemplo: Ver archivo promise.js
+
+## AWAIT ASYNC
+Una nueva manera de escribir promesas
+* Necesitamos una función que sea asíncrona usando `async function nombre(){}`
+* Para obtener resultado también se necesita una funcion asincrona
+* El resultado de la funcion se puede guardar en una variable con la palabra `await`
+  - `const x = await funcion()` donde la funcion es asincrona (async)
+* Ver await.js
