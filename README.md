@@ -137,3 +137,7 @@ Una nueva manera de escribir promesas
 * El resultado de la funcion se puede guardar en una variable con la palabra `await`
   - `const x = await funcion()` donde la funcion es asincrona (async)
 * Ver await.js
+
+## PROMISIFY
+Una utilidad `util` de javascript que permite crear una función asíncrona (que devuelve promesas) simplemente enviando la función asincrona `promisify(readFile)`, con readFile función para leer archivos asíncronamente.
+
