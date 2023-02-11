@@ -44,6 +44,7 @@ require('ruta del archivo que se necesita SIN El .JS')
 //O
 const {var1, var2, var3} = require('ruta')
 
+
 const os = require('os') 
 //Si no se pone una ruta específica NODE busca en subcarpeta del proyecto o en los módulos propios de NODE 
 ```
@@ -168,5 +169,3 @@ Interactuar con archivos grandes y recibir por porciones para optimizar el tiemp
 * Similar a una API, nos permite traer datos desde una dirección
 * para usarlo solamente usamos `fetch('direccion')` nos devuelve una promesa
 * Aún esta en etapa experimental
-
-
