@@ -15,7 +15,7 @@ const contenido = "- Añadido de texto\n"
 fs.writeFileSync('./data/fourth.txt', contenido,{flag: 'a'})
 */
 
-        // ASINCRONO
+        // ASINCRONO usando readFile
 fs.readFile('./data/first.txt', (err, data) => {
   if(err){
     console.log("Ocurrio un error", err)
